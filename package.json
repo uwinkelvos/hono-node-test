@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "compile": "tsc",
+    "test": "node --enable-source-maps --test './dist/**/*.test.js'",
+    "start": "node ./dist/server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@hono/node-server": "^1.10.0",
+    "@hono/zod-openapi": "^0.11.0",
+    "hono": "^4.2.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.11.17",
+    "typescript": "^5.4.5"
+  }
+}
